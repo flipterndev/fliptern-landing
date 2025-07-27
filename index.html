@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fliptern - Swipe Your Way to the Perfect Internship</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1657165');
+    </script>
+    <!-- End MailerLite Universal -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="LogoV1.png" alt="Fliptern Logo" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#employers" class="nav-link">For Employers</a></li>
+
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-nav-primary ml-onclick-form" data-ml-form-id="SQsk52">
+                    <i class="fas fa-clock"></i>
+                    Join Waitlist
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🚀 New Way to Find Internships</span>
+                </div>
+                <h1 class="hero-title">
+                    <em>Internships.</em> <em>Reimagined.</em> 
+                    <span class="gradient-text" style="color: #2979FF !important; font-weight: 700; font-style: normal;">Swipe your way to your dream role.</span>
+                </h1>
+                <p class="hero-description">
+                    Fliptern is the internship platform built for Gen Z — where students and companies match through a swipe. 
+                    Say goodbye to outdated job boards and ghosted applications, and hello to fast, fun, and transparent career discovery.
+                </p>
+                <div class="hero-buttons">
+                                    <button class="btn-primary btn-large ml-onclick-form" id="waitlistBtn" style="cursor: pointer;" data-ml-form-id="SQsk52">
+                    <i class="fas fa-clock"></i>
+                    Join Waitlist
+                </button>
+                    <button class="btn-outline btn-large" id="demoBtn">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>0%</h3>
+                        <p>Ghosting</p>
+                    </div>
+                    <div class="stat">
+                        <h3>30s</h3>
+                        <p>Apply Time</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Transparent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="SwipeScreen.png" alt="Fliptern Swipe Interface" class="hero-screenshot">
+                <img src="MatchScreen.png" alt="Fliptern Match Interface" class="hero-screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-badge">
+                    <i class="fas fa-play"></i>
+                    <span>How It Works</span>
+                </div>
+                <h2 style="color: #2979FF !important; -webkit-text-fill-color: #2979FF !important; background: none !important;">From Profile to Interview in 3 Simple Steps</h2>
+                <p>Experience the future of internship matching — where every swipe brings you closer to your dream opportunity</p>
+            </div>
+            
+            <div class="slideshow-container">
+                <div class="slideshow-wrapper">
+                    <!-- Slide 1: Create Your Profile -->
+                    <div class="slide active" data-slide="1">
+                        <div class="slide-content">
+                            <div class="slide-header">
+                                <div class="step-number-badge">1</div>
+                                <div class="step-info">
+                                    <h3 style="font-style: italic;">Create Your Profile</h3>
+                                    <span class="step-duration">5 minutes</span>
+                                </div>
+                            </div>
+                            <p>Set up your account once with education, skills, resume, and preferences. Your auto-profile serves as your application for every swipe.</p>
+                            <div class="step-features">
+                                <div class="step-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>One-time setup</span>
+                                </div>
+                                <div class="step-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Auto-resume generation</span>
+                                </div>
+                                <div class="step-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Skill verification</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-visual">
+                            <img src="ProfilePic.png" alt="Fliptern Profile Interface" class="profile-pic-screenshot">
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Swipe to Apply -->
+                    <div class="slide" data-slide="2">
+                        <div class="slide-content">
+                            <div class="slide-header">
+                                <div class="step-number-badge">2</div>
+                                <div class="step-info">
+                                    <h3 style="font-style: italic;">Swipe to Apply</h3>
+                                    <span class="step-duration">30 seconds</span>
+                                </div>
+                            </div>
+                            <p>Swipe right on roles you're interested in — that's your application. Companies only see candidates who swiped on them, ensuring mutual interest.</p>
+                            <div class="step-features">
+                                <div class="step-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Instant application</span>
+                                </div>
+                                <div class="step-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>No forms to fill</span>
+                                </div>
+                                <div class="step-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Mutual interest only</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-visual">
+                            <img src="InternshipProfile.jpeg" alt="Fliptern Internship Profile Interface" class="profile-screenshot">
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Match & Connect -->
+                    <div class="slide" data-slide="3">
+                        <div class="slide-content">
+                            <div class="slide-header">
+                                <div class="step-number-badge">3</div>
+                                <div class="step-info">
+                                    <h3 style="font-style: italic;">Match & Connect</h3>
+                                    <span class="step-duration">Instant</span>
+                                </div>
+                            </div>
+                            <p>When companies swipe back, you're matched! Chat instantly and schedule interviews through the app. No more waiting or wondering.</p>
+                            <div class="step-features">
+                                <div class="step-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Instant matching</span>
+                                </div>
+                                <div class="step-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Built-in chat</span>
+                                </div>
+                                <div class="step-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Interview scheduling</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-visual">
+                            <img src="Chat.jpeg" alt="Fliptern Chat Interface" class="chat-screenshot">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Dots -->
+                <div class="slideshow-dots">
+                    <button class="dot active" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                    <button class="dot" data-slide="3"></button>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="slideshow-nav prev" id="prevSlide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slideshow-nav next" id="nextSlide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Core Features</span>
+                </div>
+                <h2 style="color: #2979FF !important; -webkit-text-fill-color: #2979FF !important; background: none !important;">Revolutionary Internship Matching</h2>
+                <p style="color: white;">Built for Gen Z students and employers alike — where swiping meets career success</p>
+            </div>
+            
+            <div class="features-showcase">
+                <div class="feature-hero">
+                    <div class="feature-hero-content">
+                        <div class="feature-hero-icon">
+                            <i class="fas fa-hand-pointer"></i>
+                        </div>
+                        <h3>Swipe-to-Apply</h3>
+                        <p>The revolutionary way to apply for internships. Swipe right on roles you're interested in — that's your application. No more filling out endless forms or waiting for responses.</p>
+                        <div class="feature-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">30s</span>
+                                <span class="stat-label">Apply Time</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Forms to Fill</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-hero-visual">
+                        <img src="SwipeDisplay.gif" alt="Fliptern Swipe Interface Demo" class="feature-gif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="feature-badge">Essential</div>
+                    </div>
+                    <h3>Auto-Profile-as-Resume</h3>
+                    <p>Set up your account once with education, skills, resume, and preferences. Employers see everything automatically when you swipe.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>One-time setup</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Always up-to-date</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="feature-badge">Premium</div>
+                    </div>
+                    <h3>Optional Video Pitch</h3>
+                    <p>Stand out with a 30-second intro video to showcase your personality, passion, and communication skills.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>30-second format</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Show personality</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="feature-badge">Transparent</div>
+                    </div>
+                    <h3>Real-Time Notifications</h3>
+                    <p>Get notified if you're rejected or if your profile hasn't been viewed in 7 days. No more ghosting or wondering.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Instant feedback</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>No ghosting</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="feature-badge">Boost</div>
+                    </div>
+                    <h3>Visibility Boost</h3>
+                    <p>Pay to appear higher in an employer's swipe queue. Choose your visibility: top 50%, 25%, 10%, or #1 position.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Flexible pricing</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Guaranteed visibility</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="feature-badge">Connect</div>
+                    </div>
+                    <h3>Instant Chat + Scheduling</h3>
+                    <p>Once matched, chat inside the app and share calendar links to schedule interviews seamlessly.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Built-in messaging</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Calendar integration</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-badge">Secure</div>
+                    </div>
+                    <h3>Verified Companies</h3>
+                    <p>All companies are pre-screened and verified. No more worrying about fake job postings or scams.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Pre-screened companies</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>No scams</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Employers Section -->
+    <section id="employers" class="employers">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-badge">
+                    <i class="fas fa-building"></i>
+                    <span>For Employers</span>
+                </div>
+                <h2>Revolutionize Your Internship Hiring</h2>
+                <p>Join the future of recruitment with our innovative platform designed to streamline your hiring process and connect you with the best talent</p>
+            </div>
+            
+
+
+            <div class="employers-hero">
+                <div class="employers-hero-content">
+                    <div class="employers-hero-text">
+                        <h3>Comprehensive Dashboard</h3>
+                        <p>Our powerful employer dashboard gives you complete control over your internship hiring process. View detailed analytics, manage candidates, and track your hiring performance all in one intuitive interface.</p>
+                        <div class="employers-hero-features">
+                            <div class="hero-feature">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Real-time analytics and insights</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-users"></i>
+                                <span>Candidate management tools</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-bell"></i>
+                                <span>Instant notifications and updates</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employers-hero-visual">
+                        <img src="DesktopDemo.png" alt="Employer Dashboard Demo" class="desktop-demo-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="employers-applicants">
+                <div class="employers-applicants-content">
+                    <div class="employers-applicants-visual">
+                        <img src="ApplicantDemo.png" alt="Applicant Viewing Demo" class="applicant-demo-image">
+                    </div>
+                    <div class="employers-applicants-text">
+                        <h3>View Qualified Applicants</h3>
+                        <p>See only candidates who have swiped right on your company. Our reverse matching system ensures you only review applicants who are genuinely interested in your opportunities.</p>
+                        <div class="employers-applicants-features">
+                            <div class="applicant-feature">
+                                <i class="fas fa-user-check"></i>
+                                <span>Pre-qualified candidates only</span>
+                            </div>
+                            <div class="applicant-feature">
+                                <i class="fas fa-filter"></i>
+                                <span>Advanced filtering options</span>
+                            </div>
+                            <div class="applicant-feature">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Match score analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="employers-chat">
+                <div class="employers-chat-content">
+                    <div class="employers-chat-text">
+                        <h3>Instant Chat & Scheduling</h3>
+                        <p>Once matched with candidates, instantly start conversations and schedule interviews through our integrated chat system. No more back-and-forth emails or external scheduling tools.</p>
+                        <div class="employers-chat-features">
+                            <div class="chat-feature">
+                                <i class="fas fa-comments"></i>
+                                <span>Built-in messaging system</span>
+                            </div>
+                            <div class="chat-feature">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Calendar integration</span>
+                            </div>
+                            <div class="chat-feature">
+                                <i class="fas fa-video"></i>
+                                <span>Video call scheduling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employers-chat-visual">
+                        <img src="ChatDemo.png" alt="Chat and Scheduling Demo" class="chat-demo-image">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Why Fliptern is Different -->
+    <section class="why-different">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-badge">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>What Makes Us Different</span>
+                </div>
+                <h2 style="color: #2979FF;">Why Fliptern Is Revolutionary</h2>
+                <p style="color: black;">We're not just another job board — we're redefining how Gen Z discovers and applies to internships</p>
+            </div>
+            
+            <div class="different-hero">
+                <div class="different-hero-content">
+                    <div class="different-hero-text">
+                        <h3 style="color: white !important; font-style: italic; -webkit-text-fill-color: white !important; background: none !important;">The Future of Internship Matching</h3>
+                        <p>Traditional job boards are broken. Fliptern fixes everything that's wrong with internship hunting.</p>
+                        <div class="different-stats">
+                            <div class="different-stat">
+                                <span class="stat-number">0%</span>
+                                <span class="stat-label">Ghosting Rate</span>
+                            </div>
+                            <div class="different-stat">
+                                <span class="stat-number">30s</span>
+                                <span class="stat-label">Average Apply Time</span>
+                            </div>
+                            <div class="different-stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Transparent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="different-hero-visual">
+                        <div class="comparison-card">
+                            <div class="comparison-header">
+                                <h4>Traditional</h4>
+                                <div class="vs-badge">vs</div>
+                                <h4>Fliptern</h4>
+                            </div>
+                            <div class="comparison-items">
+                                <div class="comparison-item">
+                                    <div class="traditional">
+                                        <i class="fas fa-times-circle"></i>
+                                        <span>Endless forms</span>
+                                    </div>
+                                    <div class="fliptern">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>One swipe</span>
+                                    </div>
+                                </div>
+                                <div class="comparison-item">
+                                    <div class="traditional">
+                                        <i class="fas fa-times-circle"></i>
+                                        <span>No feedback</span>
+                                    </div>
+                                    <div class="fliptern">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Instant updates</span>
+                                    </div>
+                                </div>
+                                <div class="comparison-item">
+                                    <div class="traditional">
+                                        <i class="fas fa-times-circle"></i>
+                                        <span>Spam applications</span>
+                                    </div>
+                                    <div class="fliptern">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Mutual interest</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="different-features">
+                <div class="different-feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="feature-badge">Complete</div>
+                    </div>
+                    <h3>Complete Transparency</h3>
+                    <p>See exactly what employers see. Your profile, skills, and preferences are displayed exactly as they appear to companies.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Real-time profile preview</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Employer view simulation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Know exactly what they see</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="different-feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <div class="feature-badge">Prevented</div>
+                    </div>
+                    <h3>No Spammy Applications</h3>
+                    <p>Mutual opt-in ensures both sides are interested. Companies only see candidates who swiped on them.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Quality over quantity</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Pre-screened candidates</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Higher match rates</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="different-feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-badge">Built For</div>
+                    </div>
+                    <h3>Mobile-First Gen Z Experience</h3>
+                    <p>Swiping, video, and fast UX designed specifically for how Gen Z uses technology.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Intuitive swiping interface</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Video pitch integration</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Lightning-fast UX</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Student Excitement</span>
+                </div>
+                <h2 style="color: #2979FF;">Students Can't Wait to Try Fliptern</h2>
+                <p style="color: black;">Hear from students who are excited about the future of internship hunting</p>
+            </div>
+            
+            <div class="testimonials-hero">
+                <div class="testimonials-hero-content">
+                    <div class="testimonials-hero-text">
+                        <h3 style="color: white !important; font-style: italic; -webkit-text-fill-color: white !important; background: none !important;">Revolutionizing How Students Find Internships</h3>
+                        <p>Students are tired of traditional job boards and endless applications. Fliptern's swipe-to-apply approach is exactly what they've been waiting for.</p>
+                        <div class="testimonials-stats">
+                            <div class="testimonial-stat">
+                                <span class="stat-number">94%</span>
+                                <span class="stat-label">Would Try Swipe-to-Apply</span>
+                            </div>
+                            <div class="testimonial-stat">
+                                <span class="stat-number">87%</span>
+                                <span class="stat-label">Excited About No Ghosting</span>
+                            </div>
+                            <div class="testimonial-stat">
+                                <span class="stat-number">91%</span>
+                                <span class="stat-label">Want Video Pitch Feature</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-hero-visual">
+                        <div class="excitement-card">
+                            <div class="excitement-header">
+                                <h4>Student Survey Results</h4>
+                                <div class="excitement-badge">Pre-Launch</div>
+                            </div>
+                            <div class="excitement-items">
+                                <div class="excitement-item">
+                                    <div class="feature-name">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Swipe-to-Apply</span>
+                                    </div>
+                                    <div class="excitement-level">
+                                        <span class="level-text">Very Excited</span>
+                                        <div class="excitement-bar">
+                                            <div class="excitement-fill" style="width: 94%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="excitement-item">
+                                    <div class="feature-name">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>No Ghosting</span>
+                                    </div>
+                                    <div class="excitement-level">
+                                        <span class="level-text">Very Excited</span>
+                                        <div class="excitement-bar">
+                                            <div class="excitement-fill" style="width: 87%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="excitement-item">
+                                    <div class="feature-name">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Video Pitch</span>
+                                    </div>
+                                    <div class="excitement-level">
+                                        <span class="level-text">Very Excited</span>
+                                        <div class="excitement-bar">
+                                            <div class="excitement-fill" style="width: 91%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-features">
+                <div class="testimonial-feature-card">
+                    <div class="testimonial-icon-wrapper">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="testimonial-badge">Most Anticipated</div>
+                    </div>
+                    <h3>Swipe-to-Apply Revolution</h3>
+                    <p>"I'm so excited about the swipe-to-apply feature! No more spending hours filling out endless forms. Just swipe right and you're done. This is exactly what internship hunting needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <p>Computer Science, Stanford</p>
+                            <span class="author-status">Early Access Signup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-feature-card">
+                    <div class="testimonial-icon-wrapper">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-ghost"></i>
+                        </div>
+                        <div class="testimonial-badge">Game Changer</div>
+                    </div>
+                    <h3>End of Ghosting Era</h3>
+                    <p>"Finally, a solution to the ghosting problem! I love that Fliptern promises transparency. No more wondering if my application was even seen. I can't wait to try this."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Marcus Johnson</h4>
+                            <p>Business, NYU</p>
+                            <span class="author-status">Early Access Signup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-feature-card">
+                    <div class="testimonial-icon-wrapper">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="testimonial-badge">Stand Out Feature</div>
+                    </div>
+                    <h3>Video Pitch Innovation</h3>
+                    <p>"The video pitch feature is brilliant! It's so much better than just text. I can show my personality and passion. This will definitely help me stand out from the crowd."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Engineering, MIT</p>
+                            <span class="author-status">Early Access Signup</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Revolutionize Internship Hunting?</h2>
+                <p>Join the future of internship matching — where swiping meets career success</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary btn-large ml-onclick-form" data-ml-form-id="SQsk52">
+                        <i class="fas fa-clock"></i>
+                        Join Waitlist
+                    </button>
+                    <a href="contact.html" class="btn-secondary btn-large" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
+                </div>
+                <p class="cta-note">Be the first to know when we launch • Get in touch for partnerships</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Image Section -->
+    <img src="Students.png" alt="Students" style="width: 100%; height: auto; display: block; margin: 0; padding: 0;">
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fliptern</h3>
+                    <p>Revolutionizing internship hunting with a swipe-based approach. Find your dream internship faster than ever.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fliptern. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Popup Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <div class="video-modal-header">
+                <img src="LogoV1.png" alt="Fliptern Logo" class="modal-logo">
+                <button class="close-modal" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+                                <div class="video-container">
+                        <video id="demoVideo" controls autoplay>
+                            <source src="FlipternDemoVid.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+        </div>
+    </div>
+
+    <!-- Image Popup Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+            <div class="image-modal-header">
+                <h3 id="imageModalTitle">Employer Interface</h3>
+                <button class="close-modal" id="closeImageModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="image-container">
+                <img id="modalImage" src="" alt="Enlarged Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <!-- MailerLite Integration - Optimized for Speed -->
+    <script>
+        // Initialize MailerLite forms immediately for faster response
+        document.addEventListener('DOMContentLoaded', function() {
+            const waitlistButtons = document.querySelectorAll('.ml-onclick-form');
+            
+            waitlistButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Show loading state for better UX
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+                    this.disabled = true;
+                    
+                    if (typeof ml !== 'undefined') {
+                        try {
+                            const formId = this.getAttribute('data-ml-form-id') || 'SQsk52';
+                            ml('show', formId, true);
+                            
+                            // Reset button after popup appears
+                            setTimeout(() => {
+                                this.innerHTML = originalText;
+                                this.disabled = false;
+                            }, 800);
+                            
+                        } catch (error) {
+                            console.error('Error triggering MailerLite popup:', error);
+                            this.innerHTML = originalText;
+                            this.disabled = false;
+                            alert('Join our waitlist! Please contact us at hello@fliptern.com');
+                        }
+                    } else {
+                        // Fallback if MailerLite not loaded
+                        this.innerHTML = originalText;
+                        this.disabled = false;
+                        alert('Join our waitlist! Please contact us at hello@fliptern.com');
+                    }
+                });
+            });
+            
+            // Pre-load MailerLite forms for faster response
+            if (typeof ml !== 'undefined') {
+                ml('preload', 'SQsk52');
+            }
+        });
+        
+        // Additional optimization after page load
+        window.addEventListener('load', function() {
+            if (typeof ml !== 'undefined') {
+                // Pre-load forms again after page load
+                ml('preload', 'SQsk52');
+            }
+        });
+    </script>
+</body>
+</html> 
+</body>
+</html> 
