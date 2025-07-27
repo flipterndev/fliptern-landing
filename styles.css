@@ -3078,6 +3078,16 @@ video::-webkit-media-controls-fullscreen-button {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Navigation Mobile Improvements */
+    .nav-container {
+        padding: 0 20px;
+    }
+    
+    .nav-logo .logo-image {
+        width: 120px;
+        height: 90px;
+    }
+    
     .nav-menu {
         display: none;
         position: absolute;
@@ -3091,6 +3101,7 @@ video::-webkit-media-controls-fullscreen-button {
         padding: 1rem 0;
         border-top: 1px solid rgba(41, 121, 255, 0.1);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 999;
     }
     
     .nav-menu.active {
@@ -3101,12 +3112,18 @@ video::-webkit-media-controls-fullscreen-button {
         width: 100%;
         text-align: center;
         padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(41, 121, 255, 0.05);
+    }
+    
+    .nav-menu li:last-child {
+        border-bottom: none;
     }
     
     .nav-link {
         display: block;
         padding: 0.75rem 2rem;
         font-size: 1rem;
+        font-weight: 500;
     }
     
     .nav-buttons {
@@ -3121,6 +3138,13 @@ video::-webkit-media-controls-fullscreen-button {
         background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(20px);
         border-top: 1px solid rgba(41, 121, 255, 0.1);
+    }
+    
+    .btn-nav-primary {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 2rem;
+        font-size: 1rem;
     }
     
     .hamburger {
@@ -3139,198 +3163,336 @@ video::-webkit-media-controls-fullscreen-button {
         transform: rotate(45deg) translate(-5px, -6px);
     }
     
+    /* Hero Section Mobile Improvements */
+    .hero {
+        padding: 100px 0 60px;
+        min-height: auto;
+    }
+    
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
+        padding: 0 20px;
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 10px;
     }
     
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .btn-primary, .btn-outline {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 1rem 2rem;
+        font-size: 1rem;
     }
     
     .hero-stats {
         justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .stat h3 {
+        font-size: 1.5rem;
+    }
+    
+    .stat p {
+        font-size: 0.9rem;
     }
     
     .hero-visual {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
+        margin-top: 2rem;
     }
     
     .hero-screenshot {
-        width: 250px;
+        width: 200px;
         height: auto;
-        max-height: 450px;
+        max-height: 350px;
+    }
+    
+    /* How It Works Mobile Improvements */
+    .how-it-works {
+        padding: 60px 0;
+    }
+    
+    .how-it-works h2 {
+        font-size: 2.2rem;
+        padding: 0 20px;
     }
     
     .slideshow-wrapper {
-        min-height: 400px;
+        min-height: 350px;
     }
 
     .slide {
-        padding: 0 1rem;
-    }
-
-    .slide-content {
-        max-width: 100%;
-        padding: 1rem 3rem;
-    }
-
-    .slide-visual {
-        max-width: 100%;
-    }
-
-    .slide {
+        padding: 0 20px;
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
     }
 
     .slide-content {
+        max-width: 100%;
+        padding: 1rem 1rem;
         order: 2;
+    }
+    
+    .slide-header {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .step-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .slide-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .step-features {
+        gap: 0.5rem;
+    }
+    
+    .step-feature {
+        justify-content: center;
     }
 
     .slide-visual {
+        max-width: 100%;
         order: 1;
+    }
+    
+    .profile-pic-screenshot, .profile-screenshot, .chat-screenshot {
+        width: 180px;
+        height: auto;
     }
 
     .slideshow-nav {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
     }
 
     .slideshow-nav.prev {
-        left: 15px;
+        left: 10px;
     }
 
     .slideshow-nav.next {
-        right: 15px;
+        right: 10px;
     }
     
-    .summary-stats {
-        flex-direction: column;
-        gap: 1.5rem;
+    .slideshow-dots {
+        bottom: 20px;
+        padding: 0.5rem 1rem;
+    }
+    
+    /* Features Section Mobile Improvements */
+    .features {
+        padding: 60px 0;
+    }
+    
+    .features h2 {
+        font-size: 2.2rem;
+        padding: 0 20px;
     }
     
     .feature-hero {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 2rem;
+        gap: 1.5rem;
+        padding: 2rem;
+        margin: 0 20px 2rem;
     }
     
     .feature-hero-content h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .feature-hero-content p {
+        font-size: 1rem;
     }
     
     .feature-stats {
         justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .feature-gif {
+        max-width: 280px;
     }
     
     .features-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 20px;
     }
     
-    .companies-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .feature-card {
+        padding: 2rem;
     }
     
-    .employers-hero {
-        gap: 2rem;
-        text-align: center;
+    .feature-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Employers Section Mobile Improvements */
+    .employers {
+        padding: 60px 0;
+    }
+    
+    .employers h2 {
+        font-size: 2.2rem;
+        padding: 0 20px;
+    }
+    
+    .employers > .container > p {
+        font-size: 1rem;
+        padding: 0 20px;
     }
     
     .employers-hero-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
+        padding: 0 20px;
     }
     
     .employers-hero-text h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .employers-hero-text p {
+        font-size: 1rem;
     }
     
     .desktop-demo-image {
         max-width: 100%;
+        height: auto;
     }
     
     .employers-applicants-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
+        padding: 0 20px;
     }
     
     .employers-applicants-text h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .applicant-demo-image {
         max-width: 100%;
+        height: auto;
     }
     
     .employers-chat-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
+        padding: 0 20px;
     }
     
     .employers-chat-text h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .chat-demo-image {
         max-width: 100%;
+        height: auto;
     }
     
     .employer-images {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
+        padding: 0 20px;
     }
     
     .employer-image {
-        max-width: 300px;
+        max-width: 280px;
+        height: auto;
     }
     
     .arrow-container {
         transform: rotate(90deg);
         margin: 0.5rem 0;
+        font-size: 1.5rem;
     }
     
     .employers-stats {
         justify-content: center;
+        gap: 1.5rem;
     }
     
     .employers-features {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding: 0 20px;
     }
     
-    .summary-stats {
-        flex-direction: column;
-        gap: 2rem;
+    .employer-feature-card {
+        padding: 2rem;
+    }
+    
+    .employer-feature-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Why Different Section Mobile Improvements */
+    .why-different {
+        padding: 60px 0;
+    }
+    
+    .why-different h2 {
+        font-size: 2.2rem;
+        padding: 0 20px;
     }
     
     .different-hero-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
+        padding: 0 20px;
     }
     
     .different-hero-text h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .different-hero-text p {
+        font-size: 1rem;
     }
     
     .different-stats {
         flex-direction: column;
         gap: 1rem;
+        align-items: center;
     }
     
     .comparison-card {
         max-width: 100%;
+        padding: 1.5rem;
+        margin: 0 20px;
     }
     
     .comparison-item {
@@ -3338,30 +3500,59 @@ video::-webkit-media-controls-fullscreen-button {
         gap: 0.5rem;
     }
     
-    .different-features {
-        grid-template-columns: 1fr;
+    .traditional, .fliptern {
+        padding: 0.5rem;
+        font-size: 0.9rem;
     }
     
-    .monetization-grid {
+    .different-features {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 20px;
+    }
+    
+    .different-feature-card {
+        padding: 2rem;
+    }
+    
+    .different-feature-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Testimonials Section Mobile Improvements */
+    .testimonials {
+        padding: 60px 0;
+    }
+    
+    .testimonials h2 {
+        font-size: 2.2rem;
+        padding: 0 20px;
     }
     
     .testimonials-hero-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
+        padding: 0 20px;
     }
     
     .testimonials-hero-text h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .testimonials-hero-text p {
+        font-size: 1rem;
     }
     
     .testimonials-stats {
         flex-direction: column;
         gap: 1rem;
+        align-items: center;
     }
     
     .excitement-card {
         max-width: 100%;
+        padding: 1.5rem;
+        margin: 0 20px;
     }
     
     .excitement-item {
@@ -3370,36 +3561,413 @@ video::-webkit-media-controls-fullscreen-button {
         gap: 0.5rem;
     }
     
+    .excitement-bar {
+        width: 100px;
+    }
+    
     .testimonials-features {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 20px;
+    }
+    
+    .testimonial-feature-card {
+        padding: 2rem;
+    }
+    
+    .testimonial-feature-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* CTA Section Mobile Improvements */
+    .cta {
+        padding: 60px 0;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+        padding: 0 20px;
     }
     
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+        padding: 0 20px;
     }
     
-    .contact-content {
-        grid-template-columns: 1fr;
+    .cta-buttons .btn-primary, .cta-buttons .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 1rem 2rem;
+        font-size: 1rem;
     }
     
+    .cta-note {
+        padding: 0 20px;
+    }
+    
+    /* Footer Mobile Improvements */
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    /* Modal Mobile Improvements */
+    .video-modal-content {
+        width: 95%;
+        max-width: none;
+        margin: 20px;
+    }
+    
+    .video-modal-header {
+        padding: 15px 20px;
+    }
+    
+    .modal-logo {
+        height: 100px;
+    }
+    
+    .image-modal-content {
+        width: 95%;
+        height: 90%;
+        margin: 20px;
+    }
+    
+    .image-modal-header {
+        padding: 15px 20px;
+    }
+    
+    /* Container adjustments */
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Section header improvements */
+    .section-header {
+        margin-bottom: 3rem;
+        padding: 0 20px;
+    }
+    
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+    }
+    
+    .header-badge {
+        font-size: 0.8rem;
+        padding: 6px 12px;
     }
 }
 
 @media (max-width: 480px) {
+    /* Extra small screen optimizations */
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+        padding: 0 5px;
+    }
+    
+    .hero-buttons {
+        gap: 0.75rem;
+    }
+    
+    .btn-primary, .btn-outline {
+        max-width: 250px;
+        padding: 0.875rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero-stats {
+        gap: 1rem;
+    }
+    
+    .stat h3 {
+        font-size: 1.3rem;
+    }
+    
+    .stat p {
+        font-size: 0.8rem;
+    }
+    
+    .hero-screenshot {
+        width: 160px;
+        max-height: 280px;
     }
     
     .section-header h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
-    .companies-grid {
-        grid-template-columns: 1fr;
+    .section-header p {
+        font-size: 0.9rem;
+    }
+    
+    .header-badge {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+    
+    .slide-content {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .step-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .slide-content p {
+        font-size: 0.9rem;
+    }
+    
+    .profile-pic-screenshot, .profile-screenshot, .chat-screenshot {
+        width: 140px;
+    }
+    
+    .feature-hero {
+        padding: 1.5rem;
+        margin: 0 10px 1.5rem;
+    }
+    
+    .feature-hero-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .feature-gif {
+        max-width: 220px;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .employers h2 {
+        font-size: 1.8rem;
+    }
+    
+    .employers > .container > p {
+        font-size: 0.9rem;
+    }
+    
+    .employers-hero-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .employers-hero-text p {
+        font-size: 0.9rem;
+    }
+    
+    .employers-applicants-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .employers-chat-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .employer-image {
+        max-width: 240px;
+    }
+    
+    .employer-feature-card {
+        padding: 1.5rem;
+    }
+    
+    .employer-feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .why-different h2 {
+        font-size: 1.8rem;
+    }
+    
+    .different-hero-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .different-hero-text p {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-card {
+        padding: 1rem;
+        margin: 0 10px;
+    }
+    
+    .traditional, .fliptern {
+        padding: 0.375rem;
+        font-size: 0.8rem;
+    }
+    
+    .different-feature-card {
+        padding: 1.5rem;
+    }
+    
+    .different-feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .testimonials h2 {
+        font-size: 1.8rem;
+    }
+    
+    .testimonials-hero-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .testimonials-hero-text p {
+        font-size: 0.9rem;
+    }
+    
+    .excitement-card {
+        padding: 1rem;
+        margin: 0 10px;
+    }
+    
+    .excitement-bar {
+        width: 80px;
+    }
+    
+    .testimonial-feature-card {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .cta-content p {
+        font-size: 0.9rem;
+    }
+    
+    .cta-buttons .btn-primary, .cta-buttons .btn-secondary {
+        max-width: 250px;
+        padding: 0.875rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .nav-logo .logo-image {
+        width: 100px;
+        height: 75px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .section-header {
+        padding: 0 15px;
+    }
+    
+    .slide {
+        padding: 0 15px;
+    }
+    
+    .feature-hero {
+        margin: 0 15px 1.5rem;
+    }
+    
+    .features-grid {
+        padding: 0 15px;
+    }
+    
+    .employers-hero-content {
+        padding: 0 15px;
+    }
+    
+    .employers-applicants-content {
+        padding: 0 15px;
+    }
+    
+    .employers-chat-content {
+        padding: 0 15px;
+    }
+    
+    .employer-images {
+        padding: 0 15px;
+    }
+    
+    .employers-features {
+        padding: 0 15px;
+    }
+    
+    .different-hero-content {
+        padding: 0 15px;
+    }
+    
+    .comparison-card {
+        margin: 0 15px;
+    }
+    
+    .different-features {
+        padding: 0 15px;
+    }
+    
+    .testimonials-hero-content {
+        padding: 0 15px;
+    }
+    
+    .excitement-card {
+        margin: 0 15px;
+    }
+    
+    .testimonials-features {
+        padding: 0 15px;
+    }
+    
+    .cta-buttons {
+        padding: 0 15px;
+    }
+    
+    .cta-note {
+        padding: 0 15px;
+    }
+    
+    .footer-content {
+        padding: 0 15px;
+    }
+    
+    .video-modal-content {
+        margin: 10px;
+    }
+    
+    .image-modal-content {
+        margin: 10px;
     }
 }
 
@@ -3729,6 +4297,146 @@ html {
     
     .faq-question h3 {
         font-size: 1rem;
+    }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 768px) {
+    /* Improve touch targets */
+    .btn-primary, .btn-outline, .btn-secondary {
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+    
+    .nav-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hamburger {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Improve scrolling */
+    .slideshow-wrapper {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Better text readability */
+    .hero-description, .slide-content p, .feature-card p, .employer-feature-card p {
+        line-height: 1.6;
+    }
+    
+    /* Improve button spacing */
+    .hero-buttons, .cta-buttons {
+        gap: 1rem;
+    }
+    
+    /* Better modal handling */
+    .video-modal-content, .image-modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    /* Improve form inputs */
+    .contact-form input, .contact-form textarea, .contact-form select {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Better spacing for mobile */
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+    
+    .feature-card, .employer-feature-card, .different-feature-card, .testimonial-feature-card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Improve image loading */
+    .hero-screenshot, .profile-pic-screenshot, .profile-screenshot, .chat-screenshot {
+        loading: lazy;
+    }
+    
+    /* Better navigation experience */
+    .nav-menu.active {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    
+    /* Improve slideshow navigation */
+    .slideshow-nav {
+        touch-action: manipulation;
+    }
+    
+    .slideshow-dots {
+        touch-action: manipulation;
+    }
+    
+    .dot {
+        min-width: 12px;
+        min-height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small screen touch improvements */
+    .btn-primary, .btn-outline, .btn-secondary {
+        min-height: 48px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .nav-link {
+        min-height: 48px;
+        font-size: 16px;
+    }
+    
+    .hamburger {
+        min-height: 48px;
+        min-width: 48px;
+    }
+    
+    /* Better text sizing for readability */
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    /* Improve spacing for very small screens */
+    .hero {
+        padding: 80px 0 40px;
+    }
+    
+    .how-it-works, .features, .employers, .why-different, .testimonials, .cta {
+        padding: 40px 0;
+    }
+    
+    /* Better modal sizing for small screens */
+    .video-modal-content {
+        width: 98%;
+        margin: 10px;
+    }
+    
+    .image-modal-content {
+        width: 98%;
+        height: 95%;
+        margin: 10px;
+    }
+    
+    /* Improve form readability */
+    .contact-form input, .contact-form textarea, .contact-form select {
+        font-size: 16px;
+        padding: 14px 16px;
     }
 }
 
